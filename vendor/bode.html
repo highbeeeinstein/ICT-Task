@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p>He likes the..</p> -->
+    <input type="number" id="demo" value="18">
+    <button onclick="voteable()">check if you can vote</button>
+    <p id="boy"></p>
+    <script>
+        function voteable(){
+            var age, vote;
+            age = document.getElementById("demo").value;
+            vote = (age<18) ? "You can't vote" : "Come here and vote";
+            document.getElementById("boy").innerHTML = vote;
+        }
+    </script>
+</body>
+</html>
